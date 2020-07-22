@@ -11,6 +11,8 @@ export class ProductComponent{
 title: string ="Product App";
 desc: string="This is about products";
 imageWidth:number =50;
+showImage:boolean=true;
+userInput:string="";
 product: any[] = [
     {
 
@@ -41,5 +43,12 @@ product: any[] = [
 
 
 ];
+
+
+toggleImage():void{
+    this.showImage=!this.showImage;
+
+}
+
 
 }

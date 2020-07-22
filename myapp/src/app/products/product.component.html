@@ -5,10 +5,27 @@
         <h2 class="secondheading">{{desc}}</h2>
     </div>
     <div class="panel-body">
-        <table class="table">
+        <div class="row">
+            <div class="col-md-2">Filter</div>
+              <div class="col-md-4">
+                <input type="text" placeholder="Search here" [(ngModel)]="userInput"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h4>The entered text is</h4>
+            </div>
+            <div class="col-md-4">
+
+                <h4>{{userInput}}</h4>
+
+            </div>
+          
+        </div>
+        <table class="table" *ngIf="product && product.length; else loading">
             <thead>
                 <tr>
-                    <th>Image</th>
+                    <th><button class="btn btn-danger" (click)="toggleImage()">{{showImage?'Hide image':'Show image'}}</button></th>
                     <th>Name</th>
                     <th>Code</th>
                     <th>Price</th>
@@ -17,7 +34,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let prod of product">
-                    <td><img [src]="prod.imageUrl" [style.width.px]="imageWidth"/>
+                    <td><img [src]="prod.imageUrl" [style.width.px]="imageWidth" *ngIf="showImage"/>
                     </td>
                      <td>{{prod.ProductName}}</td>
                      <td>{{prod.productCode}}</td>
@@ -25,5 +42,8 @@
                 </tr>
             </tbody>
         </table>
+        <ng-template #loading>
+            <img src="../../assets/Loading_icon.gif"/>
+        </ng-template>
     </div>
 </div>
