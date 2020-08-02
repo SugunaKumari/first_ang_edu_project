@@ -5,7 +5,7 @@ export interface IProduct
     ProductName : string,
     ProductCode: string,
     releaseDate: string,
-    decription : string,
+    description : string,
     price: number,
     starRating:number,
     imageUrl:string

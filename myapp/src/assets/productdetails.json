@@ -1,0 +1,45 @@
+[
+    {
+
+        "_id":"dfkhskhdfk",
+        "productId": 1,
+        "ProductName" : "Leaf Rake",
+        "ProductCode": "GN-0011",
+        "releaseDate": "March 19, 2016",
+        "description" : "Leaf rake with 48 inch handle",
+        "price": 19.95,
+        "starRating":2,
+        "imageUrl":"https://www.coopsuperstores.ie/images/products/1200x1200/1713124.jpg"
+
+    },
+ 
+    
+    {
+
+        "_id":"84631dhjjsbcr",
+        "productId": 2,
+        "ProductName" : "Garden Cart",
+        "ProductCode": "GN-0023",
+        "releaseDate": "March 18, 2016",
+        "description" : "15 gallon capacity rolling garden cart",
+        "price": 32.99,
+        "starRating":4.5,
+        "imageUrl":"/assets/gardencart.jpg"
+
+    },
+    {
+
+        "_id":"dfkhskhdfk",
+        "productId": 3,
+        "ProductName" : "Saw",
+        "ProductCode": "GN-0011",
+        "releaseDate": "March 19, 2016",
+        "description" : "Saw with strong plastice handle",
+        "price": 19.95,	
+        "starRating":3.3,
+        "imageUrl":"/assets/hand-saw-icon-cartoon.webp"
+
+    }
+    
+
+]
