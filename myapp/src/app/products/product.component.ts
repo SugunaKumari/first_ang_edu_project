@@ -36,7 +36,7 @@ toggleImage():void{
 }
 
 dataReceive(message:number){
-    this.title=`"product pages>> rating clicked is " + message`;
+    this.title="product pages>> rating clicked is " + message;
 }
 
 }

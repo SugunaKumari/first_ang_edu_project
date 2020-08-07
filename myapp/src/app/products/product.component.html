@@ -35,7 +35,7 @@
                     <td><img [src]="prod.imageUrl" [style.width.px]="imageWidth" *ngIf="showImage"/>
                     </td>
                     <a [routerLink]="['/products',prod.productId]" [queryParams]="{name:prod.ProductName,img:prod.imageUrl,details:prod.description}"><td><br />{{prod.ProductName|myUppercase:"lower"}}</td> </a>
-                     <td>{{prod.ProductCode|lowercase}}</td>
+                     <td  appColor>{{prod.ProductCode|lowercase}}</td>
                      <td>{{prod.price|discount:5|currency:"INR"}}</td>
                      <td>{{prod.releaseDate|date:"MM-dd-yyyy"}}</td>
                      <td><app-star [rating]="prod.starRating" (ratingClicked)="dataReceive($event)"></app-star></td>
