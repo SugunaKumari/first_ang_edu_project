@@ -4,7 +4,7 @@
   "description": "this is an introduction to package.json file creation",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "zone.js": "^0.10.3"
   },
   "devDependencies": {},
